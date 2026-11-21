@@ -60,10 +60,11 @@ cask "pass-quest" do
 
   uninstall quit: "com.github.wxxb789.passquest"
 
-  # The data directory the install guides name; P4 appends the paths the macOS
-  # install job measures under ~/Library (goal 0017, default 8), in the array
-  # form `brew generate-zap` emits (dev-cmd/generate-zap.rb) — one string per
-  # path, because Homebrew resolves each directive value as one literal path
+  # The data directory the install guides name. The macOS install job prints
+  # the before/after `~/Library` listing (goal 0017, default 8, still open) and
+  # P5 appends what that listing measured, in the array form `brew generate-zap`
+  # emits (dev-cmd/generate-zap.rb) — one string per path, because Homebrew
+  # resolves each directive value as one literal path
   # (cask/artifact/abstract_uninstall.rb).
   zap trash: "~/Library/Application Support/Pass Quest"
 
