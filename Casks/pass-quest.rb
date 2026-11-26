@@ -10,8 +10,8 @@
 # runner expands its own {{...}} tokens and leaves an unknown one silently in
 # place) and the LEFTOVER check that fails the gate on a leftover at-sign token.
 cask "pass-quest" do
-  version "0.15.1"
-  sha256 "9fb490ef2a6a2025811a749d40ce8afa737b5977c70bc674b6d75800d570ffab"
+  version "0.15.2"
+  sha256 "5b91a85082c3dc72482dcb1777935d2ddc01fd5320e8c8dc1b7f330684bd8172"
 
   url "https://github.com/wxxb789/passquest/releases/download/v#{version}/pass-quest-#{version}-arm64.dmg"
   name "Pass Quest"
